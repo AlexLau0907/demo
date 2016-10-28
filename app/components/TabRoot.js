@@ -7,7 +7,7 @@ import Home from '../containers/navRootContainer'
 
 class Tabs extends Component {
   _changeTab (i) {
-    const { changeTab } = this.props
+    const { changeTab } = this.props;
     changeTab(i)
   }
   _renderTabContent (key) {

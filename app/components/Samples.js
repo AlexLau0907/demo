@@ -8,11 +8,13 @@ import {
 
 
 const Samples = () => {
-  <View style={styles.container}>
-    <Text style={styles.Text}>
-      Hello from Sample!
+  return (
+    <View style={styles.container}>
+      <Text style={styles.text}>
+        Hello from Sample!
     </Text>
-  </View>
+    </View>
+  );
 }
 
 

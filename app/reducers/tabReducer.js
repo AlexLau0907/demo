@@ -1,4 +1,4 @@
-import * as ActionTypes from '../actions/navActions'
+import * as ActionTypes from '../constants/ActionTypes'
 
 const homeIcon = {
   scale: 2.3,
@@ -28,6 +28,7 @@ function tabsNav(state = initialState, action) {
   if (action.index === state.index) return state
   switch (action.type) {
     case ActionTypes.CHANGE_TAB:
+      console.log(ActionTypes.CHANGE_TAB);
       return {
         ...state,
         index: action.index
